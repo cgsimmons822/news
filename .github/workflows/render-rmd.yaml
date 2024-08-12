@@ -9,7 +9,7 @@ jobs:
     permissions:
       contents: write
     env:
-      GITHUB_TOKEN: ${{ secrets.newsAPI }}
+      NEWS_API: ${{ secrets.NEWS_API }}
     steps:
     - uses: actions/checkout@v4
     - uses: r-lib/actions/setup-r@v2
