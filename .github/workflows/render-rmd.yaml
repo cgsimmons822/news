@@ -1,5 +1,5 @@
 on:
-  workflow_dispatch:
+  push:
     branches: main
 name: scrape
 
@@ -9,7 +9,7 @@ jobs:
     permissions:
       contents: write
     env:
-      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.newsAPI }}
     steps:
     - uses: actions/checkout@v4
     - uses: r-lib/actions/setup-r@v2
