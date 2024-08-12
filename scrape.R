@@ -1,4 +1,5 @@
 library(httr2)
+
 req <- request("https://newsapi.org/v2/everything") |>
   req_url_query(
     q = '`"data science"`',
